@@ -1,0 +1,15 @@
+def wave(str):
+    # Code here
+    
+    result = []
+    
+    for i, val in enumerate(str[:]):
+        if val.isspace() == True:
+            pass
+            
+        else:
+            up=str[i].upper()
+            c=str[:i] + up + str[i+1:]
+            result.append(c)
+        
+    return result
