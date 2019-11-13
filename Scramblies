@@ -1,0 +1,10 @@
+def scramble(s1, s2):
+    # your code here
+    matches = 0
+    for char in s2:
+        if char in s1:
+            matches +=1
+    if matches == len(s2):
+        return True
+    else:
+        return False
